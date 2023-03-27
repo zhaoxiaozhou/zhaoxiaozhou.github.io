@@ -3,7 +3,7 @@ layout: post
 title: 【PyQt5 GUI】PyQt5基础
 excerpt: "【PyQt5 GUI】PyQt5基础"
 date: 2023-03-27 21:35:05
-tags: ['PyQt5']
+tags: ['Linux']
 category: learning
 ---
 
