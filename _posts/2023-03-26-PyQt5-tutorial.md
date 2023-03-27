@@ -18,7 +18,6 @@ pip install pyqt5
 ### 1.1 简单入门程序
 下面是一个简单的窗口程序，显示hello world
 
-![img.png](\imgs\img_1.png)
 ```python
 import sys
 from PyQt5.QtWidgets import QApplication, QLabel
@@ -58,7 +57,6 @@ if __name__ == '__main__':
     demo.show()
     sys.exit(app.exec_())
 ```
-![img.png](\imgs\img_2.png)
 1. 该类继承QWidget，QWidget看作是一种毛坯房，而我们往其中放入QPushButton、QLabel等控件就相当于在装修这间毛坯房。类似的毛坯房还有QMainWindow和QDialog
 2. 实例化一个QPushButton，因为继承于QWidget，所以self不能忘了(相当于告诉程序这个QPushButton是放在QWidget这个房子中的)
 3. 连接信号与槽函数。self.button就是一个控件，clicked(按钮被点击)是该控件的一个信号，connect()即连接，self.change_text即下方定义的函数(我们称之为槽函数) 
@@ -118,11 +116,9 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     demo = Demo()
     demo.show()
-    sys.exit(app.exec_())
-```
-![img.png](\imgs\img_3.png)
+    sys.exit(app.exec_())![img.png](\imgs\img_3.png)
 这里的代码pressed信号连接到released信号，released信号连接到change_text槽函数，和1.2.2中效果一样
-
+```
 #### 1.2.4 一个信号连接多个槽
 ```python
 import sys
