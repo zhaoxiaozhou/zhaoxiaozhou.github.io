@@ -7,7 +7,6 @@ tags: ['PyQt5']
 category: learning
 ---
 
-[TOC]
 # pyqt5学习指南
 PyQt5 GUI学习，参考知乎的一个系列文章[快速掌握PyQt5](https://zhuanlan.zhihu.com/p/75673557)，做笔记记录
 ## 1. pyqt5准备工作
