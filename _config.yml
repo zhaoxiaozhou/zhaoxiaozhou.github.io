@@ -1,10 +1,10 @@
 # Site settings
-title: miniZZZZ
+title: zhaoxiaozhou blog 
 email: 
 description: "blog of learning process"
 baseurl: ""
-url: "https://minizzzz.github.io"
-github_username:  miniZZZZ
+url: "https://zhaoxiaozhou.github.io/"
+github_username: zhaoxiaozhou
 
 # Build settings
 markdown: kramdown
