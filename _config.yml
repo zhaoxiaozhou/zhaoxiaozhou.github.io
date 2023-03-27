@@ -1,0 +1,17 @@
+# Site settings
+title: miniZZZZ
+email: 
+description: "blog of learning process"
+baseurl: ""
+url: "https://minizzzz.github.io"
+github_username:  miniZZZZ
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
