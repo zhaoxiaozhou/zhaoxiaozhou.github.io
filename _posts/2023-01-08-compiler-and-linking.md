@@ -1,13 +1,11 @@
 ---
 layout: post
-title: 【Linux基础的知识】程序员的自我修养-编译-链接
-excerpt: "【Linux基础的知识】程序员的自我修养-编译-链接"
+title: compiler and linking
+excerpt: "a book note for program compiler,linking"
 date: 2023-01-10 19:35:05
-tags: ['Linux']
+tags: ['compiler']
 category: learning
 ---
-
-[TOC]
 
 ## 第一章 简介
 
