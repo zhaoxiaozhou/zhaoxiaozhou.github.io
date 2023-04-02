@@ -7,6 +7,30 @@ tags: ['pyqt5']
 category: learning
 ---
 
+<style>
+.wrap {
+    max-width: 900px;
+}
+p {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    overflow-wrap: break-word; /* allow wrapping of very very long strings, like txids */
+}
+.post pre,
+.post code {
+    background-color: #fafafa;
+    font-size: 13px; /* make code smaller for this post... */
+}
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+</style>
+
 # pyqt5学习指南
 
 PyQt5 GUI学习，参考知乎的一个系列文章[快速掌握PyQt5](https://zhuanlan.zhihu.com/p/75673557)，做笔记记录
