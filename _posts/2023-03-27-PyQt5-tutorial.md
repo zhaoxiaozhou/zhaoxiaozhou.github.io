@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 【PyQt5 GUI】PyQt5基础
-excerpt: "【PyQt5 GUI】PyQt5基础"
+title: PyQt5 fundation
+excerpt: "PyQt5 is a great tool for gui, so this is a learning note for pyqt5"
 date: 2023-03-27 21:35:05
-tags: ['Linux']
+tags: ['pyqt5']
 category: learning
 ---
 
 # pyqt5学习指南
+
 PyQt5 GUI学习，参考知乎的一个系列文章[快速掌握PyQt5](https://zhuanlan.zhihu.com/p/75673557)，做笔记记录
 ## 1. pyqt5准备工作
 pyqt5安装主要包括pyqt5，这里为了python环境干净，使用了anaconda工具
@@ -31,6 +32,9 @@ if __name__ == '__main__':
 2. 实例化一个QLabel控件展示文字或图片，可以创建时候就构造传入，也可以先实例化，再调用setText()方法来设置文本
 3. 调用show方法显示控件
 4. app.exec_()是执行应用，让应用开始运转循环，直到窗口关闭返回0给sys.exit()，退出整个程序
+
+
+
 ### 1.2 信号与槽
 信号(signal)与槽(slot)机制，PyQt5中各个对象间或各个对象自身就是通过信号与槽机制来相互通信的。
 信号视作裁判鸣枪，而用于行动的槽函数则视作选手开跑，当裁判鸣枪后(即信号发出)，选手就开始往前跑(槽函数启动)
