@@ -38,16 +38,6 @@ pre {
  书中给出了一个简单的例子
 
 ```C++
-/*************************************************************************\
-*                  Copyright (C) Michael Kerrisk, 2022.                   *
-*                                                                         *
-* This program is free software. You may use, modify, and redistribute it *
-* under the terms of the GNU General Public License as published by the   *
-* Free Software Foundation, either version 3 or (at your option) any      *
-* later version. This program is distributed without any warranty.  See   *
-* the file COPYING.gpl-v3 for details.                                    *
-\*************************************************************************/
-
 /* Listing 24-1 */
 
 #include "tlpi_hdr.h"
@@ -140,7 +130,7 @@ main(int argc, char *argv[])
 
 系统调用 execve(pathname， argv， envp)加载一个新程序（路径名为 pathname，参数列表为 argv， 环境变量列表为 envp） 到当前进程的内存。 这将丢弃现存的程序文本段，并为新程序重新创建栈、数据段以及堆。通常将这一动作称为执行（ execing）一个新程序。稍后会介绍构建于 execve()之上的多个库函数，每种都为编程接口提供了实用的变体。在彼此差异无关宏旨的场合，循例会将此类函数统称为 exec()，尽管实际上并没有以之命名的系统调用或者库函数  
 
-![image-20221214235222080](C:\Users\joe\AppData\Roaming\Typora\typora-user-images\image-20221214235222080.png)
+![image-20221214235222080](assets\image-20221214235222080.png)
 
 ## waitpid
 
@@ -224,8 +214,6 @@ int main(int argc, char *argv[])
 两次fork()的流程如下所示：
 
 <img src="/assets/image-20221221000611677.png">
-
-![image-20221221000611677](assets/image-20221221000611677.png)
 
 如上图3所示，为了避免子进程child成为僵尸进程，我们可以人为地创建一个子进程child1，再让child1成为工作子进程child2的父进程，child2出生后child1退出，这个时候child2相当于是child1产生的孤儿进程，这个孤儿进程由系统进程init回收。这样，当child2退出的时候，init就会回收child2的资源，child2就不会成为孤魂野鬼祸国殃民了。
 
