@@ -223,6 +223,8 @@ int main(int argc, char *argv[])
 
 两次fork()的流程如下所示：
 
+<img src="/_posts/assets/cifar_weirdimages.png">
+
 ![image-20221221000611677](assets/image-20221221000611677.png)
 
 如上图3所示，为了避免子进程child成为僵尸进程，我们可以人为地创建一个子进程child1，再让child1成为工作子进程child2的父进程，child2出生后child1退出，这个时候child2相当于是child1产生的孤儿进程，这个孤儿进程由系统进程init回收。这样，当child2退出的时候，init就会回收child2的资源，child2就不会成为孤魂野鬼祸国殃民了。
