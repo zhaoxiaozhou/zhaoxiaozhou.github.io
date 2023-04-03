@@ -223,7 +223,7 @@ int main(int argc, char *argv[])
 
 两次fork()的流程如下所示：
 
-<img src="/_posts/assets/image-20221221000611677.png">
+<img src="/assets/image-20221221000611677.png">
 
 ![image-20221221000611677](assets/image-20221221000611677.png)
 
